@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  /* max-width: 1440px;
+  width: 100%; */
+}
+.container {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  margin: 50px auto;
+  line-height: 1.6;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.one {
+  font-weight: 600;
+  color: hsl(229, 6%, 66%);
+}.flex p {
+  width: 40%;
+}
+p {
+  font-weight: 100;
+  color: hsl(229, 6%, 66%);
+}
+h3 {
+  font-weight: 400;
+}
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 30px;
+  margin: 40px auto;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+}
+.supervisor {
+  grid-column: 2/3;
+  grid-row: 2/4;
+  background-color: #fff;
+  box-shadow: 2px 1px 3px;
+  border-radius: 8px;
+  border-top: 2px solid hsl(180, 62%, 55%);
+  padding: 30px 20px;
+  position:relative;
+  height: 200px;
+}
+.team {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: #fff;
+  box-shadow: 2px 1px 3px;
+  border-radius: 8px;
+  border-top: 2px solid hsl(0, 78%, 62%);
+  padding: 30px 20px;
+  position:relative;
+  height: 200px;
+}
+.karma {
+  grid-column: 3/4;
+  grid-row: 3/5;
+  background-color: #fff;
+  box-shadow: 2px 1px 3px;
+  border-radius: 8px;
+  border-top: 2px solid hsl(34, 97%, 64%);
+  padding: 30px 20px;
+  position:relative;
+  height: 200px;
+}
+
+.calculator {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  background-color: #fff;
+  box-shadow: 2px 1px 3px;
+  border-radius: 8px;
+  border-top: 2px solid hsl(212, 86%, 64%);
+  padding: 30px 20px;
+  position:relative;
+  height: 200px;
+ 
+}
+ img {
+   position: absolute;
+   right: 20px;
+   bottom: 10px;
+   padding: 10px;
+ }
+
+ @media (max-width: 768px) {
+   .container {
+     width: 100%;
+   }
+   .flex {
+     display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+  
+ }
+
+ @media (max-width: 377px) {
+   h1 {
+     font-size: 28px;
+   }
+   .flex p {
+     width: 90%;
+   }
+   .container {
+     width: 100%;
+   }
+   .flex {
+     display: flex;
+    flex-direction: column;
+    width:100%;
+   }
+   section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+ .team img, .calculator img{
+  position:absolute;
+  right: 10px;
+  bottom: 0px;
+  padding: 5px;
+}
+ }
+
+
