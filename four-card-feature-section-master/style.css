@@ -125,10 +125,10 @@ section {
 
  @media (max-width: 577px) {
    h1 {
-     font-size: 28px;
+     font-size: 20px;
    }
    .flex p {
-     width: 90%;
+     width: 70%;
    }
    .container {
      width: 100%;
@@ -137,14 +137,12 @@ section {
      display: flex;
     flex-direction: column;
     width:100%;
+    margin: 10px;
    }
    section {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+     display:block;
+     margin: 0 40px;
+     overflow: hidden;
 }
  .team img, .calculator img{
   position:absolute;
