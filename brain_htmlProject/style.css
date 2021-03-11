@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+}
+.container {
+  width: 100%;
+  line-height: 1.7;
+
+}
+section{
+  border: 2px solid #333;
+  box-shadow: 2px 1px 2px;
+  margin: 0 40px;
+}
+.heading {
+  font-family: cursive;
+}
+h1, h2 {
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+}
+.row1 {
+display: flex;
+justify-content: center;
+} 
+.first-qrt {
+flex: 1;
+padding: 20px;
+border-right: 1px solid #333;;
+}
+.half {
+flex: 2;
+padding: 20px;
+}
+.last-qrt {
+flex: 1;
+padding: 20px;
+border-left: 1px solid #333;
+}
+.row2 {
+  display: flex;
+  /* padding: 20px; */
+  margin-bottom: 60px;
+}
+.boy {
+  width: 25%;
+}
+.ul {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.fes, .two, .three, .four, .five {
+  flex: 1;
+  font-size: 25px;
+  color: #333;
+ display: flex;
+ align-items: center;
+ padding-left: 10px;
+}
+.fes {
+ background-color: #FFEAA7;
+}
+.two {
+ background-color: #81ECEC;
+}
+.three {
+ background-color: #55EFC4;
+}
+.four {
+ background-color: #74B9FF;
+}
+.five {
+ background-color: #A29BFE;
+}
+
+@media (max-width: 500px){
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .row1, .row2 {
+    width: 100%;
+  }
+  .boy {
+    width: 100%;
+    padding: 20px;
+  }
+  .ul {
+    width: 100%;
+  }
+}
+
+
+
+
+
